@@ -13,7 +13,6 @@ const DetailDisplay = () => {
 
   return(
   <div>
-    
     <h1 data-testid ="detail">Name: {character.name}</h1>
     <img src={character.image} alt={character.name}/>
     <h2>Status: {character.status}</h2>

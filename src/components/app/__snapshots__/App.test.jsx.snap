@@ -2,8 +2,20 @@
 
 exports[`App component renders App 1`] = `
 <DocumentFragment>
-  <h1>
-    Hello World
-  </h1>
+  <div
+    class="app"
+  >
+    <button>
+      Previous Page
+    </button>
+    <button>
+      Next Page
+    </button>
+    <span>
+      <img
+        src="http://cdn.lowgif.com/full/ff8280aafe27319d-ajax-loading-gif-transparent-background-2-gif-images.gif"
+      />
+    </span>
+  </div>
 </DocumentFragment>
 `;
