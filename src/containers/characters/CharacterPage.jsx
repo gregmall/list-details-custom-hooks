@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import CharacterList from '../../components/characters/CharacterList';
 
 const CharacterPage = () => {
   const [page, setPage] = useState(1);
@@ -11,7 +12,7 @@ const CharacterPage = () => {
     >Previous Page</button>
     <button onClick={() => setPage(page => page +1)}>
       Next Page</button>
-    <CharacterList />
+    <CharacterList page={page}/>
     </>
   );
 };

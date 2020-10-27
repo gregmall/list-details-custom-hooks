@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom'
-import { useCharacters } from '../../hooks/characters';
+import { useCharacters } from '../hooks/characters';
 import Character from './Character'
 
 const CharacterList = ({ page }) => {
