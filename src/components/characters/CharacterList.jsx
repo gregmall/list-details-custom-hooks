@@ -9,11 +9,9 @@ const CharacterList = ({ page }) => {
   const { loading, characters } = useCharacters(page);
   if(loading) return <span><img src="http://cdn.lowgif.com/full/ff8280aafe27319d-ajax-loading-gif-transparent-background-2-gif-images.gif"/></span>
 
-
-  const characterElements = characters.map(character => (
+    const characterElements = characters.map(character => (
     
       <li key={character.id} className={styles.item} >
-        
         <Link to = {`/detail/${character.id}`}>
           <Character  {...character } />
         </Link>

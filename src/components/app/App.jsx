@@ -5,11 +5,9 @@ import {
     Switch,
     
 } from 'react-router-dom';
-
 import CharacterPage from '../../pages/characters/CharacterPage';
 import Detail from '../../pages/detail/Detail';
 import Header from '../header/Header';
-
 
 export default function App() {
 
@@ -28,5 +26,4 @@ export default function App() {
       </div>
   </>
   );
-  
 }

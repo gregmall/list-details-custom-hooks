@@ -6,9 +6,8 @@ const Character = ({ image, name }) => (
     <p>{name}</p>
     <img src={image} alt={name}/>
     
-    </div>
-  
- );
+  </div>
+);
 
 Character.propTypes = {
   name: PropTypes.string.isRequired,

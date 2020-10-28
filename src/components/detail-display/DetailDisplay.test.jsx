@@ -14,15 +14,12 @@ describe('DetailDisplay component', () => {
       image: 'rick.png',
       status: 'Alive'
 
-      
     });
     render(
-    <MemoryRouter initialEntries={['/detail/1']}>
-      <Route path="/detail/:id" component={DetailDisplay}/>
-    </MemoryRouter>
+      <MemoryRouter initialEntries={['/detail/1']}>
+        <Route path="/detail/:id" component={DetailDisplay}/>
+      </MemoryRouter>
     );
-
-   
 
     return waitFor(() => {
       screen.getByText('Name: Rick');
