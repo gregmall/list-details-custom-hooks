@@ -6,8 +6,8 @@ import {
     
 } from 'react-router-dom';
 
-import CharacterPage from '../../containers/characters/CharacterPage';
-import Detail from '../../containers/detail/Detail';
+import CharacterPage from '../../pages/characters/CharacterPage';
+import Detail from '../../pages/detail/Detail';
 import Header from '../header/Header';
 
 
