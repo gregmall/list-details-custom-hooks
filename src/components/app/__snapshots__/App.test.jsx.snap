@@ -2,15 +2,41 @@
 
 exports[`App component renders App 1`] = `
 <DocumentFragment>
+  <header
+    class="Header"
+  >
+    <div>
+      <img
+        src="src/components/header/Webp.net-resizeimage.png"
+      />
+    </div>
+    <div>
+      <a
+        href="/"
+      >
+        HOME
+      </a>
+    </div>
+    <div>
+      <h1>
+        RICK AND MORTY
+      </h1>
+    </div>
+  </header>
   <div
     class="app"
   >
-    <button>
+    <button
+      disabled=""
+    >
       Previous Page
     </button>
     <button>
       Next Page
     </button>
+    <span>
+       Page: 1
+    </span>
     <span>
       <img
         src="http://cdn.lowgif.com/full/ff8280aafe27319d-ajax-loading-gif-transparent-background-2-gif-images.gif"

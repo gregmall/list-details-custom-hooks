@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom'
 import { useCharacters } from '../hooks/characters';
 import Character from './Character'
+import styles from './CharacterList.css'
 
 const CharacterList = ({ page }) => {
   const { loading, characters } = useCharacters(page);
@@ -10,17 +11,19 @@ const CharacterList = ({ page }) => {
 
 
   const characterElements = characters.map(character => (
-  
-      <li key={character.id}>
+    
+      <li key={character.id} className={styles.item} >
+        
         <Link to = {`/detail/${character.id}`}>
           <Character  {...character } />
         </Link>
       </li>
-  
+      
     ));
 
   return (
-    <ul data-testid="characters">
+    
+    <ul data-testid="characters" className={styles.display}>
       {characterElements}
     </ul> 
   );
